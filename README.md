@@ -13,12 +13,18 @@ The run.sh script has a number of port and folder mappings configured. Once the 
 ## Using the environment
 
 You’ll see when you log in that I have set up six accounts. All of them would be very insecure in a real-world scenario, as both the password and recovery phrase are identical to the account name on all six:
-alice: test user account
-bob: test user account
-carol: test user accoung
-dave: test user account
-funder: pre-funded with 1000 ether in the genesis block (the amount is adjustable in chain.json)
-signer: the account used for signing blocks
+
+* alice: test user account
+
+* bob: test user account
+
+* carol: test user account
+
+* dave: test user account
+
+* funder: pre-funded with 1000 ether in the genesis block (the amount is adjustable in chain.json)
+
+* signer: the account used for signing blocks
 
 In the Settings tab, I suggest you enable the Contracts view, which allows you to deploy the contracts you're testing, while I also recommend disabling Addressbook and Applications, to unclutter the screen.
 
