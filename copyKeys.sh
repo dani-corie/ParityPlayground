@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cp -r ./config/keysBkup ./chainData/keys
+cp -rT ./config/keysBkup ./chainData/keys
