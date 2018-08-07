@@ -1,0 +1,13 @@
+# Ignore everything in chainData (Parity working files), apart from subdirectory
+# containing account keys
+chainData/*
+!chainData/keys
+
+# Ignore everything the keys subdirectory which is not related to the
+# parityPlayground test network
+chainData/keys/*
+!chainData/keys/parityPlayground
+
+# Ignore *.json files in the parityPlayground directory (more working files
+# that are not account keys)
+chainData/keys/parityPlayground/*.json

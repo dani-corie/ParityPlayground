@@ -4,9 +4,9 @@ This is a Docker image for a single-node PoA Parity blockchain, for dev testing 
 
 ## Getting started
 
-You can build the image using sudo ./build.sh. The key files for the test accounts are under config/keysBkup, which will be copied to chainData/keys (where Parity will be looking for them) by calling ./copyKeys.sh. Note that since Docker runs as root, files created by the running image in mounted folders will be created with root:root as owner.
+You can build the image using sudo ./build.sh. The key files for the test accounts are under chainData/keys/parityPlayground (where Parity will be looking for them). Note that since Docker runs as root, files created by the running image in mounted folders (e.g. chainData) will be created with root:root as owner.
 
-Once the keys are in place and the image is built, sudo ./run.sh will start the container in interactive mode (ie. it will be attached to your terminal console, so you can see the messages output by the Parity instance.) Stopping Parity via ctrl+C in the console will automatically shut down the Docker image as well.
+Once the image is built, sudo ./run.sh will start the container in interactive mode (ie. it will be attached to your terminal console, so you can see the messages output by the Parity instance.) Stopping Parity via ctrl+C in the console will automatically shut down the Docker image as well.
 
 The run.sh script has a number of port and folder mappings configured. Once the container is running, you can access the graphical UI with a browser using the address http://localhost:8180/ (this is the conventional address for a Parity GUI, so if you’re running another Parity instance, say for the Mainnet or Kovan on your machine, then you should edit run.sh to change the outside port mappings.
 
