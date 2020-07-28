@@ -1,4 +1,10 @@
-# ParityPlayground
+# ParityPlayground [OBSOLETE!!!]
+
+This was a Docker image for a single-node PoA Parity blockchain, for dev testing purposes. With the changes in Parity since it was created, it's become entirely unusable as it was originally intended. I may or may not put something like this together again. If I do, I'll replace this repository.
+
+Original readme for posterity:
+
+---
 
 This is a Docker image for a single-node PoA Parity blockchain, for dev testing purposes. Note that you need Docker installed on your system to use this (duh)... Also, I use Linux and MacOS, so I couldn't really test on Windows, or even take it into account. That said, there's nothing in here that should be problem with Docker for Windows, and the scripts are mainly for convenience...
 
